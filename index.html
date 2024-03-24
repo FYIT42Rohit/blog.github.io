@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a,li{
+    all: unset;
+    cursor: pointer;
+}
+
+/* header section */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* background-color: rgba(227, 226, 226, 0.295); */
+    background-color: rgb(0, 0, 0);
+}
+
+.header .logo{
+    font-weight: 600;
+    /* color: rgb(17, 1, 84); */
+    font-size: 20px;
+    cursor: pointer;
+    font-style: oblique;
+    color: rgb(13,190,152);
+}
+
+.header li a:hover{
+    /* color: rgb(125, 125, 125); */
+    color: rgb(13,190,152);
+}
+
+.header li{
+    margin: 15px;
+    font-size: 16px;
+    /* color: rgb(74, 73, 73); */
+    /* font-weight: 600; */
+    color: white;
+}
+
+.header input{
+    all: unset;
+}
+
+.inputbox{
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgb(136, 134, 157);
+    box-shadow: 0px 0px 10px rgb(13,190,152);
+}
+
+#searchterm{
+    margin:6px 12px;
+    font-size: 16px;
+}
+
+#searchterm::placeholder{
+    font-size: 16px;
+}
+
+.inputbox #icon{
+    font-size:20px;
+    padding:6px 12px;
+    /* color: grey; */
+
+    transition: color 0.4ms ease;
+}
+
+#search-logo{
+    cursor: pointer;
+}
+
+#search-logo:hover #icon{
+    color: rgb(63, 62, 62);
+    color: rgb(4, 145, 114);
+
+}
+
+/*  section1 */
+.section1{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background-color: rgb(1,122,90);
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+
+}
+
+#linkofweb{
+    margin:0px 5px;
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+}
+
+#linkofweb:hover{
+    color: rgb(174, 174, 174);
+}
+/* secction 2 */
+.section2 .card-of-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 100px;
+    width: 60%;
+    text-align: justify;
+    border-right: 1px solid rgb(219, 217, 217);
+    padding-right: 100px;
+    position: relative;
+}
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.textcontent{
+    color: rgb(70, 70, 70);
+    margin: 10px;
+}
+#imageofblog{
+    width: 30vw;
+    margin: 20px 0px;
+}
+
+.maincontent p{
+    margin: 15px  0px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.info-of-writer{
+    font-size: 14px;
+    font-style: italic;
+    margin:10px 0px;
+}
+    </style>
+
+    <!-- ICONIFY ICON LINK -->
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            Logo_of_Header
+        </div>
+
+        <div class="nav-elements">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contact</a></li>
+        </div>
+        
+        <div class="search-box">
+            <div class="inputbox">
+                <input type="text" name="search" id="searchterm"> 
+                <div id="search-logo"><iconify-icon icon="ion:search" id="icon"></iconify-icon></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 1 -->
+
+    <div class="section1">
+        <!-- text title of another blog -->
+        <span>| Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem officia odio sit, eum blanditiis corporis quia magni </span><a href="" id="linkofweb">See More</a> |
+    </div>
+
+    <!-- section 2 -->
+    <div class="section2">
+        <div class="card-of-blog">
+            <div class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+            <div class="textcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat accusantium fugit impedit et possimus molestias eligendi, omnis iusto, ipsam, aliquam asperiores labore ut placeat! Iste quis perferendis veniam et.</div>
+            <div class="image">
+                <img src="images.jpg" alt="" id="imageofblog">
+            </div>
+            <div class="maincontent">
+                <!--para dena padega php mai-->
+                <p><span style="font-size: 25px;font-weight: bold;">L</span>orem, ipsum dolor sit amet consectetur adipisicing elit. Hic illo, facere temporibus earum maxime saepe, veniam quibusdam quisquam a, consectetur dolore quia repellat. Voluptates debitis saepe, velit nostrum distinctio eum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus hic animi, neque quis quam eaque debitis ullam architecto dignissimos placeat, corrupti expedita nobis voluptates eveniet harum. Omnis neque nemo suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quaerat obcaecati dolor, nisi labore sequi non sed totam quae dignissimos ratione. Minus ipsa ipsam sed asperiores facilis cum fugit itaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime et blanditiis aperiam cumque repellendus deleniti dicta harum aliquam facilis nesciunt autem modi cum ut, consequatur accusantium voluptatum ad numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas placeat temporibus deserunt iure facere officiis esse quasi sit qui! Nihil repellendus dignissimos magni assumenda porro architecto ab suscipit, eaque repudiandae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime et blanditiis aperiam cumque repellendus deleniti dicta harum aliquam facilis nesciunt autem modi cum ut, consequatur accusantium voluptatum ad numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto est laudantium cumque laborum aliquam excepturi deserunt modi! Excepturi dolore natus eligendi libero? Dolor labore quidem iusto nesciunt pariatur natus vel.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime et blanditiis aperiam cumque repellendus deleniti dicta harum aliquam facilis nesciunt autem modi cum ut, consequatur accusantium voluptatum ad numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut sint earum accusamus harum hic quisquam totam nihil accusantium aperiam facere recusandae sed architecto cum excepturi dolorem autem, atque natus alias.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime et blanditiis aperiam cumque repellendus deleniti dicta harum aliquam facilis nesciunt autem modi cum ut, consequatur accusantium voluptatum ad numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius veniam ipsum voluptatem, numquam dolorum perferendis optio dolores dignissimos beatae illo quisquam exercitationem consequuntur, est aspernatur quas id! Similique, sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime et blanditiis aperiam cumque repellendus deleniti dicta harum aliquam facilis nesciunt autem modi cum ut, consequatur accusantium voluptatum ad numquam.</p> 
+            </div>
+            <div class="info-of-writer">
+                <div class="userinfo">- By Rohit Kumhar (March 24th 2024)</div>
+            </div>
+        </div>
+        <!-- <div class="related-topics">
+            <div class="related-title">Related Topics</div>
+            <div class="cards">
+                <div class="card">
+                    <div class="img"><img src="images/images.jpg" alt="" id="re-img"></div>
+                    <div class="re-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div> -->
+        </div>
+        
+    </div>
+
+    <!-- section 3 -->
+    <div class="section3">
+        <!-- other blog cards slider-->
+        <div class="card">
+            <img src="" alt="" id="cardimg">
+            <div class="detail">
+                <div class="contentcard"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section4">
+        <!-- categories slider-->
+        
+    </div>
+
+    <div class="section5">
+        <!-- trending topics -->
+        <!-- <div class="maintitle">Hot Topic's</div> -->
+        <div class="card-container">
+            <div class="card">
+                <div class="title"></div>
+                <img src="" alt="" id="imgofhot">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        
+    </div>
+</body>
+</html>
