@@ -139,6 +139,7 @@ a,li{
 #imageofblog{
     width: 30vw;
     margin: 20px 0px;
+    border-radius: 5px;
 }
 
 .maincontent p{
@@ -151,8 +152,91 @@ a,li{
     font-style: italic;
     margin:10px 0px;
 }
-    </style>
 
+.card{
+    box-shadow: 0px 0px 5px grey;
+    width: 20vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-right:20px;
+    margin-bottom: 20px;
+}
+
+#cardimg{
+    width: 20vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(107, 108, 108);
+}
+
+.detail{
+    padding: 5px;
+    font-size: 14px;
+}
+.section3{
+    margin: 40px 100px;
+}
+
+.background-show .writerinfo{
+    font-style: italic;
+    font-size: 14px;
+}
+.readable-text{
+    font-size: 14px;
+    text-align: justify;
+    padding: 5px;
+    line-height: 1.3;
+}
+.background-show{
+    position: absolute;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.581);
+    top: 0;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.5s ease;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+.card:hover .background-show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.category{
+    background:linear-gradient(to bottom, rgb(1,122,90), rgb(3, 142, 105));
+    width: fit-content;
+    color: white;
+    padding:2px 10px;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+.card h3{
+    margin: 5px 0px;
+}
+
+.maintitle{
+    font-size: 25px;
+    margin: 40px 0px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#seemore{
+    color: black;
+}
+    </style>
     <!-- ICONIFY ICON LINK -->
     <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
 
@@ -191,7 +275,7 @@ a,li{
             <div class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
             <div class="textcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat accusantium fugit impedit et possimus molestias eligendi, omnis iusto, ipsam, aliquam asperiores labore ut placeat! Iste quis perferendis veniam et.</div>
             <div class="image">
-                <img src="images.jpg" alt="" id="imageofblog">
+                <img src="images/images.jpg" alt="" id="imageofblog">
             </div>
             <div class="maincontent">
                 <!--para dena padega php mai-->
@@ -213,20 +297,101 @@ a,li{
                     <div class="img"><img src="images/images.jpg" alt="" id="re-img"></div>
                     <div class="re-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
                 </div>
-            </div> -->
-        </div>
+            </div>
+        </div> -->
         
     </div>
 
     <!-- section 3 -->
     <div class="section3">
         <!-- other blog cards slider-->
-        <div class="card">
-            <img src="" alt="" id="cardimg">
-            <div class="detail">
-                <div class="contentcard"></div>
+        <div class="maintitle"><u>Related Topics:</u></div>
+        <div class="cards">
+
+            <div class="card">
+                <img src="images/images.jpg" alt="" id="cardimg">
+                <div class="detail">
+                    <div class="category">Technology</div>
+                    <h3>Artificial Intelligence</h3>
+                    <div class="contentcard">Lorem ipsumonsectetur adipisicing elit. Rem reprehenderit laudantium at ea vero minus qui repudiandae obcaecati, unde veniam, repella, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <!-- <div class="like">
+                    <div class="icons">
+                        <iconify-icon icon="uiw:like-o"></iconify-icon>
+                        <iconify-icon icon="ic:twotone-share"></iconify-icon>
+                        <iconify-icon icon="ant-design:comment-outlined"></iconify-icon>
+                    </div>
+                </div> -->
+                <div class="background-show">
+                    <div class="content">
+                        <div class="writerinfo">-By: <u>Rohit Kumhar (March 24th 2024)</u> </div>
+                    </div>
+                </div>
             </div>
+            <div class="card">
+                <img src="images/images.jpg" alt="" id="cardimg">
+                <div class="detail">
+                    <div class="category">Technology</div>
+                    <h3>Artificial Intelligence</h3>
+                    <div class="contentcard">Lorem ipsumonsectetur adipisicing elit. Rem reprehenderit laudantium at ea vero minus qui repudiandae obcaecati, unde veniam, repella, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <!-- <div class="like">
+                    <div class="icons">
+                        <iconify-icon icon="uiw:like-o"></iconify-icon>
+                        <iconify-icon icon="ic:twotone-share"></iconify-icon>
+                        <iconify-icon icon="ant-design:comment-outlined"></iconify-icon>
+                    </div>
+                </div> -->
+                <div class="background-show">
+                    <div class="content">
+                        <div class="writerinfo">-By: <u>Rohit Kumhar (March 24th 2024)</u> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/images.jpg" alt="" id="cardimg">
+                <div class="detail">
+                    <div class="category">Technology</div>
+                    <h3>Artificial Intelligence</h3>
+                    <div class="contentcard">Lorem ipsumonsectetur adipisicing elit. Rem reprehenderit laudantium at ea vero minus qui repudiandae obcaecati, unde veniam, repella, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <!-- <div class="like">
+                    <div class="icons">
+                        <iconify-icon icon="uiw:like-o"></iconify-icon>
+                        <iconify-icon icon="ic:twotone-share"></iconify-icon>
+                        <iconify-icon icon="ant-design:comment-outlined"></iconify-icon>
+                    </div>
+                </div> -->
+                <div class="background-show">
+                    <div class="content">
+                        <div class="writerinfo">-By: <u>Rohit Kumhar (March 24th 2024)</u> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/images.jpg" alt="" id="cardimg">
+                <div class="detail">
+                    <div class="category">Technology</div>
+                    <h3>Artificial Intelligence</h3>
+                    <div class="contentcard">Lorem ipsumonsectetur adipisicing elit. Rem reprehenderit laudantium at ea vero minus qui repudiandae obcaecati, unde veniam, repella, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <!-- <div class="like">
+                    <div class="icons">
+                        <iconify-icon icon="uiw:like-o"></iconify-icon>
+                        <iconify-icon icon="ic:twotone-share"></iconify-icon>
+                        <iconify-icon icon="ant-design:comment-outlined"></iconify-icon>
+                    </div>
+                </div> -->
+                <div class="background-show">
+                    <div class="content">
+                        <div class="writerinfo">-By: <u>Rohit Kumhar (March 24th 2024)</u> </div>
+                    </div>
+                </div>
+            </div>
+           
         </div>
+
+
     </div>
 
     <div class="section4">
@@ -236,7 +401,7 @@ a,li{
 
     <div class="section5">
         <!-- trending topics -->
-        <!-- <div class="maintitle">Hot Topic's</div> -->
+        <div class="maintitle">Hot Topic's</div>
         <div class="card-container">
             <div class="card">
                 <div class="title"></div>
